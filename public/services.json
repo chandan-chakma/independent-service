@@ -1,0 +1,44 @@
+[
+    {
+        "id": 1,
+        "name": "SAJEK VALLEY",
+        "price": "2000",
+        "description": "Sajek valley is known for its natural environment and is surrounded by mountains, dense forest, and grassland hill tracks. Many small rivers flow through the mountains.",
+        "img": "https://i.ibb.co/fr2W9Z1/maxresdefault.png"
+    },
+    {
+        "id": 2,
+        "name": "ALUTILA CAVE",
+        "price": "100",
+        "description": "Alutila Cave is located in Matiranga Upazila in hill district of Khagrachari, Bangladesh.The cave formed inside the 1000-meter-high hil.The cave is 100 meters long. The cave is so dark that torches or locally sold flambeaux are used to see well enough to walk around the cave.",
+        "img": "https://i.ibb.co/Z2Mv7PY/3ce0157ee1dcd967c0c33e0b111916ef.png"
+    },
+    {
+        "id": 3,
+        "name": "KAPTAI LAKE",
+        "price": "150",
+        "description": "Kaptai Lake is the largest lake in Bangladesh. It is located in the Kaptai Upazila under Rangamati District of Chittagong Division. The lake was created as a result of building the Kaptai Dam on the Karnaphuli River, as part of the Karnaphuli Hydro-electric project. Kaptai Lake's average depth is 100 feet and maximum depth is 490 feet.",
+        "img": "https://i.ibb.co/X8ZZDDK/1cf9b857-b4bd-4b5a-9681-421df6fefae8.png"
+    },
+    {
+        "id": 4,
+        "name": "SORNO MONDIR",
+        "price": "180",
+        "description": "The first thing that will amaze the tourists visiting Buddha Dhatu Jadi is the elegant stairways which lead up to the temple. The temple is built on the top of the hill and is ornamented with exquisite and delicate images, both painted and sculptural. There is a golden bell which is set on a dragon. This is situated within the temple precinct.",
+        "img": "https://i.ibb.co/1JCrQmC/1-1.png"
+    },
+    {
+        "id": 5,
+        "name": "BOGA LAKE",
+        "price": "100",
+        "description": "Boga Lake is the most beautiful natural lake in Bangladesh. It is also known as Bagakain Lake or Baga Lake. Boga lake is 18 kilometer away from Ruma Sadar Upozilla in Bandarban. The area of this lake is about 15 acres. It is about 3000 feet above sea level. The color of water of this lake is blue and very nice. There are many mythological stories behind the creation of this lake. There are many tourists make their way to Boga lake every year, specially in the winter season",
+        "img": "https://i.ibb.co/d2Y4JDt/dec51e8875c6d5eb16e50eea68d026a2.png"
+    },
+    {
+        "id": 6,
+        "name": "COX'S BAZAR",
+        "price": "300",
+        "description": "Cox's Bazar is a city, fishing port, tourism centre, and district headquarters in southeastern Bangladesh. It is famous mostly for its long natural sandy beach. It is located 150 km (93 mi) south of the city of Chittagong. ",
+        "img": "https://i.ibb.co/1zBRVzQ/Cox-1.png"
+    }
+]
