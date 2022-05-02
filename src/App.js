@@ -5,10 +5,11 @@ import Home from './Pages/Home/Home';
 import Services from './Pages/Services/Services';
 import VisitDetails from './Pages/VisitDetails/VisitDetails';
 import Login from './Pages/Login/Login';
+import Registered from './Pages/Registered/Registered';
 
 function App() {
   return (
-    <div className="App">
+    <div className="">
       <Header></Header>
       <Routes>
         <Route path='/' element={<Home></Home>}></Route>
@@ -16,6 +17,7 @@ function App() {
         <Route path='/service/:serviceId' element={<VisitDetails></VisitDetails>}></Route>
 
         <Route path='/login' element={<Login></Login>}></Route>
+        <Route path='/registered' element={<Registered></Registered>}></Route>
       </Routes>
 
 
