@@ -3,16 +3,22 @@ import { Button, Form } from 'react-bootstrap';
 import { useCreateUserWithEmailAndPassword } from 'react-firebase-hooks/auth';
 import { Link, useNavigate } from 'react-router-dom';
 import auth from '../../firebase.init';
+import SocialLogin from '../SocialLogin/SocialLogin';
 
 const Registered = () => {
     const [agree, setAgree] = useState(false);
+
     const navigate = useNavigate();
     const [
         createUserWithEmailAndPassword,
         user,
         loading,
-        error,
-    ] = useCreateUserWithEmailAndPassword(auth);
+        error1,
+    ] = useCreateUserWithEmailAndPassword(auth, { sendEmailVerification: true });
+
+    const handleLogin = () => {
+        navigate('/')
+    }
 
     const handleRegistered = (event) => {
         event.preventDefault();
@@ -22,7 +28,7 @@ const Registered = () => {
         console.log(name);
 
         createUserWithEmailAndPassword(email, password);
-        navigate('/')
+        navigate('/');
 
 
     }
@@ -55,8 +61,9 @@ const Registered = () => {
                 <Button disabled={!agree} variant="primary" type="submit">
                     Registered
                 </Button>
-                <p>Already Registered? <Link to='/login' className='text-primary text-decoration-none'>Please Login</Link></p>
+                <p>Already Registered? <Link to='/login' onClick={handleLogin} className='text-primary text-decoration-none'>Please Login</Link></p>
             </Form>
+            <SocialLogin></SocialLogin>
 
         </div>
     );

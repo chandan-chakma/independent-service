@@ -9,7 +9,7 @@ import Registered from './Pages/Registered/Registered';
 
 function App() {
   return (
-    <div className="">
+    <div className=''>
       <Header></Header>
       <Routes>
         <Route path='/' element={<Home></Home>}></Route>
