@@ -90,8 +90,8 @@ const Login = () => {
                 <p>New to travel? <Link to='/registered' onClick={navigateRegistered} className='text-danger text-decoration-none'>Please Registered</Link></p>
 
                 <p>Forget Password?<button onClick={handleResetPassword} className='btn btn-link text-primary text-decoration-none'>Reset Password</button></p>
-
             </Form>
+            {errorElement}
 
             <SocialLogin></SocialLogin>
             <ToastContainer></ToastContainer>

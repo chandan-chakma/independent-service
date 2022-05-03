@@ -6,7 +6,7 @@ const VisitDetails = () => {
     const { serviceId } = useParams();
 
     return (
-        <div>
+        <div className='text-center mt-2'>
             <h2>Visit Now{serviceId}</h2>
 
             <Link to='/checkout'>
