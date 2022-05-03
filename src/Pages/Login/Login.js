@@ -5,6 +5,8 @@ import { Button, Form } from 'react-bootstrap';
 import { useSendPasswordResetEmail, useSignInWithEmailAndPassword } from 'react-firebase-hooks/auth';
 import { Link, useLocation, useNavigate } from 'react-router-dom';
 import { toast, ToastContainer } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
+
 import SocialLogin from '../SocialLogin/SocialLogin';
 import auth from './../../firebase.init';
 
@@ -36,6 +38,9 @@ const Login = () => {
         signInWithEmailAndPassword(email, password)
 
     }
+    const navigateRegistered = () => {
+        navigate('/registered');
+    }
 
     const handleResetPassword = async () => {
         const email = emailRef.current.value;
@@ -49,17 +54,17 @@ const Login = () => {
         }
     }
 
-    const navigateRegistered = () => {
-        navigate('/registered');
-    }
+
     let errorElement;
 
     if (error) {
         errorElement =
+            <div>
+                <p className='text-danger'>Error: {error?.message} {error.message}</p>
 
-            <p>Error: {error.message}</p>
+            </div>
+
     }
-
 
     if (user) {
         navigate(from, { replace: true });
@@ -78,17 +83,18 @@ const Login = () => {
                     <Form.Label>Password</Form.Label>
                     <Form.Control ref={passwordRef} type="password" placeholder="Password" />
                 </Form.Group>
-                <p className='text-danger'>{errorElement}</p>
-
 
                 <Button variant="primary" type="submit">
                     Login
                 </Button>
+                <p>New to travel? <Link to='/registered' onClick={navigateRegistered} className='text-danger text-decoration-none'>Please Registered</Link></p>
+
                 <p>Forget Password?<button onClick={handleResetPassword} className='btn btn-link text-primary text-decoration-none'>Reset Password</button></p>
 
-                <p>New to travel? <Link to='/registered' onClick={navigateRegistered} className='text-danger text-decoration-none'>Please Registered</Link></p>
             </Form>
+
             <SocialLogin></SocialLogin>
+            <ToastContainer></ToastContainer>
 
         </div>
 
