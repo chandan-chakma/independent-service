@@ -1,4 +1,5 @@
 
+// import { async } from '@firebase/util';
 import { async } from '@firebase/util';
 import React, { useRef } from 'react';
 import { Button, Form } from 'react-bootstrap';
@@ -17,7 +18,6 @@ const Login = () => {
 
     const navigate = useNavigate();
     const location = useLocation();
-
     let from = location.state?.from?.pathname || "/";
 
     const [
@@ -28,7 +28,6 @@ const Login = () => {
     ] = useSignInWithEmailAndPassword(auth);
 
     const [sendPasswordResetEmail, sending] = useSendPasswordResetEmail(auth);
-
 
     const handleSubmit = (event) => {
         event.preventDefault();
@@ -63,12 +62,11 @@ const Login = () => {
                 <p className='text-danger'>Error: {error?.message} {error.message}</p>
 
             </div>
-
     }
-
     if (user) {
         navigate(from, { replace: true });
     }
+
     return (
         <div className='w-50 mx-auto'>
             <h2>Please Login</h2>

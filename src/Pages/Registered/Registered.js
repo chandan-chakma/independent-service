@@ -29,11 +29,10 @@ const Registered = () => {
         const password = event.target.password.value;
         console.log(name);
 
-
         await createUserWithEmailAndPassword(email, password);
         await updateProfile({ displayName: name });
         alert('Updated profile');
-        navigate('/');
+        navigate('/home');
 
 
     }

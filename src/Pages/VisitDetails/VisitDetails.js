@@ -12,8 +12,6 @@ const VisitDetails = () => {
             <Link to='/checkout'>
                 <button className='btn btn-primary'> Confirm Visit</button>
             </Link>
-
-
         </div>
     );
 };
