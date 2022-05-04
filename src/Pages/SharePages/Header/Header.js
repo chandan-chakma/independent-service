@@ -14,7 +14,7 @@ const Header = () => {
     }
     return (
         <div>
-            <Navbar collapseOnSelect sticky='top' expand="lg" bg="primary" variant="dark">
+            <Navbar collapseOnSelect expand="lg" bg="primary" sticky="top" variant="dark">
                 <Container>
                     <Navbar.Brand as={Link} to='/'>
                         <img
@@ -39,7 +39,7 @@ const Header = () => {
                             </NavDropdown>
                         </Nav>
                         <Nav>
-                            <Nav.Link href="#deets">More deets</Nav.Link>
+                            <Nav.Link as={Link} to='/about'>About</Nav.Link>
                             {user ?
                                 <button className='bg-info border-rounded text-black px-3 fs-5 ' onClick={handleSignOut}>Signout</button> :
 

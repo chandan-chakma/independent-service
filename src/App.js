@@ -9,6 +9,8 @@ import Registered from './Pages/Registered/Registered';
 import CheckOut from './Pages/CheckOut/CheckOut';
 import RequireAuth from './Pages/RequireAuth/RequireAuth';
 import NotFound from './Pages/NotFound/NotFound';
+import About from './Pages/About/About';
+import Footer from './Pages/SharePages/Footer/Footer';
 
 
 function App() {
@@ -28,9 +30,11 @@ function App() {
           <CheckOut></CheckOut>
         </RequireAuth>
         }></Route>
+        <Route path='/about' element={<About></About>}></Route>
 
         <Route path='*' element={<NotFound></NotFound>}></Route>
       </Routes>
+      <Footer></Footer>
 
 
 
