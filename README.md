@@ -1,6 +1,28 @@
 # Getting Started with Create React App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Live website link [travel](https://github.com/facebook/create-react-app).
+
+
+# Feature and Functionality
+- This is a travel website where user can hired guide.
+- There are Home, about, service, blog, login and registered.
+- when user want to take service click visit now button it will take service details page.
+- after user confirm service if user not login it will redirect login page.
+- after user login or register its mean user already login. there is signout button where user can sign out.
+- user can also login using social media. like facebook and github.
+- if user forget password user can reset password. 
+- make website responsive.
+
+
+## Technologies
+1. React(javascript framework).
+2. React router.
+3. firebase authentication.
+4. react firebase hooks.
+5. bootstrap.
+6. react bootstrap.
+
+
 
 ## Available Scripts
 
