@@ -11,6 +11,7 @@ import RequireAuth from './Pages/RequireAuth/RequireAuth';
 import NotFound from './Pages/NotFound/NotFound';
 import About from './Pages/About/About';
 import Footer from './Pages/SharePages/Footer/Footer';
+import Blog from './Pages/Blog/Blog';
 
 
 function App() {
@@ -22,6 +23,7 @@ function App() {
         <Route path='/home' element={<Home></Home>}></Route>
         <Route path='/services' element={<Services></Services>}></Route>
         <Route path='/service/:serviceId' element={<VisitDetails></VisitDetails>}></Route>
+        <Route path='/blog' element={<Blog></Blog>}></Route>
 
         <Route path='/login' element={<Login></Login>}></Route>
         <Route path='/registered' element={<Registered></Registered>}></Route>
