@@ -1,7 +1,7 @@
 .services {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    grid-gap: 14px;
+    grid-gap: 20px;
 }
 
 /* responsive media query */

@@ -6,7 +6,7 @@ import instagram from '../../../Images/social/instagram.png';
 
 const Footer = () => {
     return (
-        <footer className='p-5 mt-5 bg-dark text-white '>
+        <footer className='p-5 mt-5 bg-dark text-white  '>
 
             <div className='ps-5'>
                 <h1 className='fs-4'>About Us</h1>
@@ -23,16 +23,14 @@ const Footer = () => {
 
             </div>
 
-            <div>
-                <h1 className='fs-4'>Be Social</h1>
+            <div className='ps-5'>
+                <h1 className='fs-4 '>Be Social</h1>
 
-                <div className='d-flex mt-3'>
-                    <div className='pe-4'>
-                        <img src={facebook} alt="" />
-                    </div>
-                    <div>
-                        <img src={instagram} alt="" />
-                    </div>
+                <div className='social'>
+
+                    <img className='pe-3' src={facebook} alt="" />
+                    <img src={instagram} alt="" />
+
                 </div>
 
 

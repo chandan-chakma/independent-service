@@ -8,15 +8,43 @@
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     align-items: center;
-    justify-content: space-between;
+    justify-content: center;
 }
 
 #myphoto {
-    width: 400px;
+    width: 350px;
+
 }
 
 #mygoal {
     width: 600px;
+    margin: auto;
 
+}
+
+@media only screen and (max-width:576px) {
+    #aboutme {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    #myphoto {
+        width: 350px;
+
+    }
+
+    #mygoal {
+        text-align: center;
+        width: 350px;
+        margin: auto;
+
+    }
+
+
+}
+
+@media only screen and (min-width:577px) and(max-width:768px) {
+    #aboutme {
+        grid-template-columns: repeat(1, 1fr);
+    }
 
 }

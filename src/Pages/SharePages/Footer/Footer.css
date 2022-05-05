@@ -2,8 +2,24 @@ footer {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
 
+}
 
+.social {
+    display: inline;
 
+}
 
+@media only screen and (max-width:576px) {
+    footer {
+        grid-template-columns: repeat(1, 1fr);
+
+    }
+
+}
+
+@media only screen and (min-width:577px) and(max-width:768px) {
+    footer {
+        grid-template-columns: repeat(2, 1fr);
+    }
 
 }
