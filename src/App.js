@@ -16,7 +16,7 @@ import Blog from './Pages/Blog/Blog';
 
 function App() {
   return (
-    <div className=''>
+    <div >
       <Header></Header>
       <Routes>
         <Route path='/' element={<Home></Home>}></Route>
