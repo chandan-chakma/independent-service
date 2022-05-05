@@ -17,3 +17,8 @@
     align-items: center;
     justify-content: center
 }
+
+.card:hover {
+    transform: scale(0.9);
+    transition: 2s;
+}
